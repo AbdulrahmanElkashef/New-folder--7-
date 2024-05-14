@@ -42,7 +42,7 @@ body {
   background-color: var(--secondary);
   
 }
-.divider{
+.divider {
   border-bottom: 1px solid var(--border);
   margin:  3rem 0;
 }

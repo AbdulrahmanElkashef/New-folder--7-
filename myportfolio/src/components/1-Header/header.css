@@ -37,7 +37,7 @@ header button.menu {
 }
 
 /* IconButton */
-header button.icon-menu, header button.mode{
+header button.icon-menu, header button.mode {
     background-color: var(--bgheader);
     height: 2.4rem;
     width: 2.4rem;
@@ -50,7 +50,7 @@ header button.icon-menu, header button.mode{
     transition: 0.2s;
 }
 
-header button.icon-menu:hover, header button.mode:hover{
+header button.icon-menu:hover, header button.mode:hover {
     color: var(--title);
     border: 1px solid rgb(244, 165, 96);
 }
@@ -61,7 +61,7 @@ header .icon-clear {
     transition: 0.3s;
 }
 
-header .icon-clear:hover{
+header .icon-clear:hover {
     font-size: 1.6rem;
     color: crimson;
     rotate: 180deg;
@@ -82,7 +82,7 @@ header .fixed {
     100% {scale: 1;}
 }
 
-header .fixed ul.model{
+header .fixed ul.model {
     animation: mymove 0.7s 1;
     width: 85%;
     margin-left: auto;
