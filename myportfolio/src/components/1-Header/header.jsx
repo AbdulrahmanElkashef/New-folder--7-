@@ -5,7 +5,7 @@ import './header.css';
   const [showModel, setshowModel] = useState(false);
   return (
     <header className='flex'>
-      <button onClick={() => {setshowModel(true) }} className='menu'>show model</button>
+      <button onClick={() => {setshowModel(true) }} className='menu icon-menu flex' />
 
       <div />
       <nav>
@@ -18,11 +18,18 @@ import './header.css';
         </ul>
       </nav>
 
-      <button>light</button>
+      <button className='mode flex'>
+        <span className='icon-moon-o'></span>
+      </button>
    {showModel && (
     <div className='fixed'>
        
        <ul className='model'>
+         <li>
+         <button className='icon-clear' onClick={() => {
+          setshowModel(false)
+         }}></button>
+         </li>
          <li><a href='#About'>About</a></li>
          <li><a href='#Articles'>Articles</a></li>
          <li><a href='#Project'>Project</a></li>

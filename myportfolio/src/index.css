@@ -52,11 +52,24 @@ li {
 }
 
 a {
-  text-decoration: none;
-  color: initial;
   transition: 0.2s;
+  all: unset;
+
+}
+
+a:hover {
+  cursor: pointer;
 }
 
 .border {
   border: 1px solid red;
+}
+
+button {
+  all: unset ;
+  cursor: pointer;
+}
+
+button:active {
+  scale: 0.9;
 }
