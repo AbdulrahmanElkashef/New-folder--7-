@@ -5,10 +5,12 @@ html {
   letter-spacing: 0.1px;
 }
 
+html {  box-sizing: border-box;}
+
+*, *:before, *:after {box-sizing: inherit;}
+
+
 * {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
@@ -21,7 +23,10 @@ html {
 --subtitle: rgb(161, 161, 170);
 --bgheader: rgb(39, 39, 42);
 --blue: rgb(93, 188, 252);
+--icons-hover: #d4d4d8;
 
+
+--container-padding: 4.8rem;
 }
 
 body {
@@ -40,12 +45,17 @@ body {
   margin-left: auto;
   margin-right: auto;
   background-color: var(--secondary);
+  padding: 0 var(--container-padding);
   
 }
+
 .divider {
   border-bottom: 1px solid var(--border);
   margin:  3rem 0;
+  width: calc(100% + var(--container-padding) + var(--container-padding));
+  margin-left: calc(var(--container-padding) * -1);
 }
+
 
 li {
   list-style: none;
@@ -72,4 +82,31 @@ button {
 
 button:active {
   scale: 0.9;
+}
+
+@media (max-width: 1000px) {
+  .container{
+    --container-padding: 1.7rem;
+    width: 90%;
+    padding: 0 var(--container-padding);
+  }
+
+  .divider {
+    width: calc(100% + var(--container-padding) + var(--container-padding));
+    margin-left: calc(var(--container-padding) * -1);
+  }
+  
+}
+
+@media (max-width: 600px) {
+  .container{
+    width: 98%;
+    padding: 0 ;
+  }
+
+  .divider {
+    width: calc(100% + var(--container-padding) + var(--container-padding));
+    margin-left: 0 var(--container-padding);
+  }
+  
 }

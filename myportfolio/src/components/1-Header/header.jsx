@@ -26,7 +26,7 @@ import './header.css';
        
        <ul className='model'>
          <li>
-         <button className='icon-clear' onClick={() => {
+         <button className='icon-close' onClick={() => {
           setshowModel(false)
          }}></button>
          </li>

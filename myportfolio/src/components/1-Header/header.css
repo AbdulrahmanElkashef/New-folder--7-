@@ -1,3 +1,8 @@
+
+/* =========================================
+     1- header Design 
+========================================= */
+
 header.flex {
     justify-content: space-between;
     padding: 0 2.4rem;
@@ -28,6 +33,10 @@ header ul li a:hover {
     font-weight: 500;
 }
 
+/* =========================================
+     2-Button & Icons 
+========================================= */
+
 header button {
     font-size: 1.2rem; 
 }
@@ -55,25 +64,30 @@ header button.icon-menu:hover, header button.mode:hover {
     border: 1px solid rgb(244, 165, 96);
 }
 
-header .icon-clear {
+header .icon-close {
     font-size: 1.3rem;
     color: var(--subtitle);
     transition: 0.3s;
 }
 
-header .icon-clear:hover {
+header .icon-close:hover {
     font-size: 1.6rem;
     color: crimson;
     rotate: 180deg;
 }
 
-/* Model == pop up  */
+
+/* =========================================
+     3-Modle == POP up  
+========================================= */
+
 
 header .fixed {
     position: fixed;
     inset: 0;
     z-index: 11;
     background-color: rgb(40, 40, 48, 0.911);
+    backdrop-filter: blur(4px);
 }
 
 @keyframes mymove {
@@ -84,7 +98,7 @@ header .fixed {
 
 header .fixed ul.model {
     animation: mymove 0.7s 1;
-    width: 85%;
+    width: 75%;
     margin-left: auto;
     margin-right: auto;
     margin-top: 2rem;
@@ -104,6 +118,7 @@ header .fixed ul.model li:first-child{
     border: none;
     padding-bottom: 0;
     padding-top: 0.2rem;
+    margin-bottom: -1rem;
 }
 
 header .fixed ul.model li:last-child {
@@ -115,8 +130,9 @@ header .fixed ul.model li a {
 }
 
 
-
-
+/* =========================================
+     4-Responsive Desgin (Media qyery) 
+========================================= */
 
 @media (max-width: 700px ) {
     header.flex nav {display: none;}
