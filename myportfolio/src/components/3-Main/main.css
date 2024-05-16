@@ -4,6 +4,7 @@
     ========================================= 
     1- Lift Section 
     2- Right Section (animation)
+    3-Responsive Desgin (Media qyery)
 
 */
 
@@ -49,7 +50,7 @@ main section.lift-section.flex button.active {
 
 
 /* =========================================
-     1- Right Section ==> ProjectsCard
+     2- Right Section ==> ProjectsCard
 =========================================== */
 main section.right-section.flex{
     flex-wrap: wrap;
@@ -66,6 +67,7 @@ main section.right-section.flex{
         rgba(255, 255, 255, 0.05)
 
     );
+    overflow: hidden;
 }
 
 .card:hover {
@@ -116,7 +118,9 @@ main section.right-section.flex{
     margin-right: 12px;
 }
 
-
+/* =========================================
+     3-Responsive Desgin (Media qyery) 
+========================================= */
 
 @media (max-width: 600px) {
     .card {
